@@ -1,0 +1,42 @@
+.header-main-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+}
+
+.icon-div {
+  display: flex;
+  align-items: center;
+}
+.search-bar-div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+.search input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
+.input-style {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.icon-style {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+}
