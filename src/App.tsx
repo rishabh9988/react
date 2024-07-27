@@ -1,14 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './Header/Header';
+import Header from './components/Header/Header';
+import './index.css';
+import Body from './components/Body/Body';
 
-const App = (): JSX.Element => {
+const styles = {
+  appLayoutContainter: 'app-layout-container',
+};
+
+const AppLayout: React.FC = (): Element => {
   return (
-    <div>
+    <div className={styles.appLayoutContainter}>
       <Header />
+      <Body />
     </div>
   );
 };
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-root.render(<App />);
+root.render(<AppLayout />);

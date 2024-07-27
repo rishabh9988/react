@@ -1,0 +1,22 @@
+.header-main-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #000;
+}
+
+.icon-div {
+  display: flex;
+  align-items: center;
+}
+.icon-style {
+  width: 6rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.nav-div {
+  padding: 0px 10px;
+  display: flex;
+}

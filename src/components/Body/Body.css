@@ -1,0 +1,13 @@
+.body-container {
+  padding-top: 15px;
+}
+
+.search-container {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.restaurant-list-container {
+  display: flex;
+  gap: 51;
+  flex-wrap: wrap;
+}
