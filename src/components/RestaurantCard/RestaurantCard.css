@@ -1,18 +1,18 @@
 .res-card-container {
   border: 1px solid black;
+  height: 400px;
   width: 300px;
   cursor: pointer;
   transition: 200ms;
+  padding: 10px;
 }
 .res-card-container:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
-.image-style-container {
+.image-container {
+  height: 200px;
 }
 .image-style {
   width: 100%;
-}
-.res-card-body-container {
-  padding: 10px;
-  background-color: #f0f0f0f0;
+  height: 100%;
 }

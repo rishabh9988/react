@@ -1,5 +1,6 @@
 import React from 'react';
 import './RestaurantCard.css';
+import { restaurantImageUrl } from '../../utils/constants';
 
 const styles = {
   resCardContainer: 'res-card-container',
@@ -15,7 +16,7 @@ const RestaurantCard: React.FC = (props): Element => {
     <div className={styles.resCardContainer}>
       <div className={styles.imageContainer}>
         <img
-          src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${cloudinaryImageId}`}
+          src={`${restaurantImageUrl}${cloudinaryImageId}`}
           className={styles.imageStyle}
         />
       </div>

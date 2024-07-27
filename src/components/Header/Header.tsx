@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 
 const styles = {
@@ -6,9 +6,11 @@ const styles = {
   iconDiv: 'icon-div',
   iconStyle: 'icon-style',
   navDiv: 'nav-div',
+  loginBtn: 'login-btn',
 };
 
 const Header: React.FC = (): Element => {
+  const [loginState, setLoginState] = useState<boolean>(false);
   return (
     <div className={styles.headerMainDiv}>
       <div className={styles.iconDiv}>
@@ -23,6 +25,12 @@ const Header: React.FC = (): Element => {
         <ul>Favourites</ul>
         <ul>Offers</ul>
         <ul>Cart</ul>
+        <button
+          className={styles.loginBtn}
+          onClick={() => setLoginState(!loginState)}
+        >
+          {loginState ? 'LOGOUT' : 'LOGIN'}
+        </button>
       </div>
     </div>
   );
