@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Body.css';
 import RestaurantCard from '../RestaurantCard/RestaurantCard';
 import ShimmerCard from '../RestaurantCard/ShimmerCard/Shimmer';
+import { Link } from 'react-router-dom';
 
 const styles = {
   bodyContainer: 'body-container',
@@ -70,7 +71,9 @@ const Body: React.FC = (): Element => {
       </div>
       <div className={styles.restaurantListContainer}>
         {restaurantsData.map((resData) => (
-          <RestaurantCard key={resData.info.id} resData={resData.info} />
+          <Link to={`restaurants/${resData.info.id}`}>
+            <RestaurantCard key={resData.info.id} resData={resData.info} />
+          </Link>
         ))}
       </div>
     </div>

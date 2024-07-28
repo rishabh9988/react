@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Header.css';
+import { Link } from 'react-router-dom';
+import Login from '../Login/Login';
 
 const styles = {
   headerMainDiv: 'header-main-div',
@@ -21,10 +23,13 @@ const Header: React.FC = (): Element => {
         />
       </div>
       <div className={styles.navDiv}>
-        <ul>Home</ul>
-        <ul>Favourites</ul>
-        <ul>Offers</ul>
-        <ul>Cart</ul>
+        <ul>
+          <Link to="/">Home</Link>
+          <Link to="/about">About Us</Link>
+          <Link to="/contact">Contact Us</Link>
+          <Link to="/">Cart</Link>
+          <Link to="/restaurants/:resId"></Link>
+        </ul>
         <button
           className={styles.loginBtn}
           onClick={() => setLoginState(!loginState)}
